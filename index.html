@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offre Exceptionnelle : PACK ULTIME Divertissement Complet (7000 FCFA)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- STYLES CSS INTÉGRÉS (Esthétique Luxe Sombre avec Touches de Couleurs de Marque) --- */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f; /* Fond Noir Profond */
+            color: #d4d4d4;
+            line-height: 1.6;
+            text-align: center;
+        }
+        header, section {
+            padding: 50px 5%;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        /* --- ACCROCHE HAUT DE PAGE (FIXE) --- */
+        .top-bar {
+            background-color: #1a1a1a;
+            color: #ffcc00; /* Or/Jaune Luxe */
+            padding: 12px; 
+            font-size: 1.2em; 
+            font-weight: 900; 
+            border-bottom: 3px solid #ffcc00; 
+            position: sticky; /* L'en-tête est FIXE */
+            top: 0;
+            z-index: 1000; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        .header {
+            background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before { 
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1574267432837-f418d1979b0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'); 
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1; 
+            z-index: 0;
+        }
+        .header-content {
+            position: relative; 
+            z-index: 1;
+        }
+        .hero-title {
+            font-size: 3em;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .hero-subtitle {
+            font-size: 1.4em;
+            color: #ffcc00;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        strong {
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        /* --- CTA PRINCIPAL (Bouton Or avec Animation WOW) --- */
+        .cta-button {
+            display: block;
+            max-width: 480px;
+            margin: 50px auto 30px;
+            background-color: #ffcc00;
+            color: #0f0f0f;
+            text-decoration: none;
+            padding: 22px 30px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: 900;
+            border: none;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+            /* ANIMATION WOW: Pulsation */
+            animation: pulseCta 2s infinite; 
+        }
+        .cta-button:hover {
+            background-color: #e0b300;
+            transform: scale(1.02);
+            animation: none; 
+        }
+        @keyframes pulseCta {
+            0% { transform: scale(1); box-shadow: 0 0 15px rgba(255, 204, 0, 0.4); }
+            50% { transform: scale(1.02); box-shadow: 0 0 25px rgba(255, 204, 0, 0.7); } 
+            100% { transform: scale(1); box-shadow: 0 0 15px rgba(255, 204, 0, 0.4); }
+        }
+
+        /* --- SECTION VIDÉO LOCALE --- */
+        .video-section {
+            background-color: #1a1a1a;
+            border-top: 1px solid #333;
+        }
+        .video-section h3 {
+             color: #ffffff;
+             border-bottom: 2px solid #555;
+             padding-bottom: 15px;
+             max-width: 600px;
+             margin: 0 auto 30px;
+        }
+        .video-container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+            border: 3px solid #ffcc00;
+        }
+
+        /* --- PROPOSITION DE VALEUR (Hover WOW) --- */
+        .value-proposition {
+            background-color: #0f0f0f;
+            padding-top: 50px;
+        }
+        .value-proposition h3 {
+            color: #ffcc00;
+            margin-bottom: 40px;
+        }
+        .univers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .univers-card {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 5px solid; 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+        }
+        .univers-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3); 
+        }
+
+        .card-image-wrapper {
+            width: 100%;
+            height: 180px; 
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .univers-card h4 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 2px solid; 
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .univers-card ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .univers-card li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .univers-card li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+            line-height: 0.7;
+            color: #ffcc00; 
+        }
+        
+        /* COULEURS SPÉCIFIQUES POUR CHAQUE UNIVERS */
+        .cine-card { border-left-color: #E50914; } 
+        .cine-card h4 { border-bottom-color: #E50914; }
+        .cine-card li::before { color: #E50914; content: "🎬"; } 
+
+        .tv-card { border-left-color: #005696; } 
+        .tv-card h4 { border-bottom-color: #005696; }
+        .tv-card li::before { color: #005696; content: "📡"; } 
+
+        .adult-card { border-left-color: #C70039; } 
+        .adult-card h4 { border-bottom-color: #C70039; }
+        .adult-card li::before { content: "🔞"; color: #C70039; }
+
+        /* --- SECTION PRIX ET EXCLUSIVITÉ --- */
+        .final-offer {
+            background-color: #1a1a1a;
+            padding-bottom: 60px;
+            border-top: 5px solid #444;
+        }
+        .final-offer h3 {
+            color: #ffffff;
+        }
+        .price-display {
+            background-color: #0f0f0f;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 500px;
+            margin: 20px auto 40px;
+            border: 2px dashed #ffcc00;
+        }
+        .old-price-line {
+            text-decoration: line-through;
+            color: #ff6666;
+            font-size: 1.2em;
+            margin: 0 0 10px 0;
+        }
+        .new-price-line {
+            font-size: 3.5em;
+            font-weight: 900;
+            color: #38b438; 
+            margin: 0;
+            line-height: 1;
+        }
+        .new-price-line span {
+            font-size: 0.5em;
+            font-weight: 400;
+            color: #ffffff;
+            display: block;
+            margin-top: 5px;
+        }
+        .guarantee {
+            color: #cccccc;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        /* --- FAQ PRO (Accordéon Amélioré avec Effet WOW) --- */
+        .faq-section {
+            background-color: #0f0f0f;
+            text-align: left;
+            padding-bottom: 80px;
+        }
+        .faq-section h3 {
+            color: #ffcc00;
+            text-align: center;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .faq-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            border-left: 3px solid #ffcc00;
+        }
+        .faq-summary {
+            font-weight: 700;
+            font-size: 1.1em;
+            display: block;
+            color: #ffffff;
+        }
+        .faq-summary::after {
+            content: ' +';
+            float: right;
+            font-weight: 900;
+            color: #ffcc00;
+            transition: transform 0.2s; 
+        }
+        .faq-item[open] .faq-summary::after {
+            content: ' -';
+            transform: rotate(90deg);
+        }
+        .faq-answer {
+            margin-top: 15px;
+            color: #cccccc;
+            border-top: 1px dashed #333333;
+            padding-top: 15px;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background-color: #0f0f0f;
+            text-align: center;
+            padding: 30px 5%;
+            border-top: 1px solid #333333;
+            font-size: 0.9em;
+            color: #666666;
+        }
+
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.2em; }
+            .hero-subtitle { font-size: 1.2em; }
+            .cta-button { font-size: 1.3em; padding: 18px 20px; }
+            .new-price-line { font-size: 3em; }
+            .univers-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        💎 <strong>OFFRE EXCLUSIVE :</strong> Un seul paiement pour 3 univers de divertissement complets.
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="hero-title">Votre Passeport Ultime vers le <strong>Divertissement Sans Limite</strong>.</h1>
+            <h2 class="hero-subtitle">Accédez à <strong>Netflix, Canal+, Disney+, Prime Video & Pack Adulte</strong>. Un seul pack. Un prix unique.</h2>
+            
+            <a href="https://www.pay.moneyfusion.net/pack-ultime-netflix-canal-adulte_1758734286679/" class="cta-button">
+                DÉBLOQUER MON ACCÈS IMMÉDIAT (7000 FCFA)
+            </a>
+        </div>
+    </header>
+
+
+    <section class="value-proposition">
+        <h3>LE CONTENU DE VOTRE PACK EXCLUSIF :</h3>
+        <div class="univers-grid">
+            <div class="univers-card cine-card">
+                <div class="card-image-wrapper">
+                    <img src="netflix.png">
+                </div>
+                <h4>CINÉMA & SÉRIES</h4>
+                <ul>
+                    <li><strong>Netflix</strong> : L'intégralité du catalogue.</li>
+                    <li><strong>Amazon Prime Video</strong> : Exclusivités, Blockbusters.</li>
+                    <li><strong>Disney+</strong> : Marvel, Star Wars, Pixar.</li>
+                    <li>Compatibilité <strong>Smart TV, Téléphone, PC</strong> et Box.</li>
+                </ul>
+            </div>
+            <div class="univers-card tv-card">
+                <div class="card-image-wrapper">
+                    <img src="canal.png" alt="Chaînes TV Internationales">
+                </div>
+                <h4>CHAÎNES TV INTERNATIONALES</h4>
+                <ul>
+                    <li>Toutes les chaînes <strong>Canal+</strong> (Sport, Ciné, Séries).</li>
+                    <li><strong>+500 chaînes Monde</strong> (Afrique, Europe, Amériques).</li>
+                    <li>Qualité <strong>HD fluide et stable</strong> garantie.</li>
+                    <li>Installation simple, <strong>Assistance 7j/7</strong>.</li>
+                </ul>
+            </div>
+            <div class="univers-card adult-card">
+                <div class="card-image-wrapper">
+                    <img src="amour.jpg">
+                </div>
+                <h4>PACK ADULTE (18+)</h4>
+                <ul>
+                    <li><strong>+200 Vidéos & Chaînes HD</strong> (Accès 24h/24).</li>
+                    <li><strong>+25 eBooks</strong> Sexualité & Érotisme (Guides, Conseils).</li>
+                    <li><strong>+50 Jeux Torrides</strong> pour couples.</li>
+                    <li><strong>Confidentialité</strong> et sécurité assurées.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-offer">
+        <h3>L'Opportunité Unique d'une Vie.</h3>
+        <div class="price-display">
+            <p class="old-price-line">Valeur Commerciale des Abonnements : 20 000 FCFA/Mois</p>
+            <p class="new-price-line">7000 FCFA <span>Paiement Unique & Définitif.</span></p>
+        </div>
+        
+        <a href="https://wa.me/22993534357" class="cta-button">
+            ✅ Nous joindre via WhatsApp
+        </a>
+        <p class="guarantee">Votre achat est garanti par notre support <strong>WhatsApp 7j/7</strong>.</p>
+    </section>
+
+    <section class="faq-section">
+        <h3>Vos Interrogations. Nos Garanties.</h3>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-summary">Le prix de 7000 FCFA est-il mensuel ?</summary>
+                <p class="faq-answer">Non. C'est un <strong>paiement UNIQUE</strong>. Vous réglez une seule fois et profitez de l'accès complet sans aucune autre facture ni abonnement mensuel.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Je ne suis pas très à l'aise avec la technologie. Est-ce un problème ?</summary>
+                <p class="faq-answer">Absolument pas. Le processus est ultra-simplifié, et notre équipe est disponible via <strong>WhatsApp 7j/7</strong> pour vous guider pas-à-pas jusqu'à ce que tout fonctionne.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Le contenu est-il à jour ?</summary>
+                <p class="faq-answer">Oui. Les contenus des plateformes VOD (Netflix, Prime, etc.) et les chaînes TV sont <strong>mis à jour en temps réel</strong> pour vous garantir l'accès aux dernières nouveautés.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Ce pack est une offre exclusive. Le prix peut changer sans préavis alors profitez vite de notre promotion ! </p>
+        <p>&copy; 2025 - OhNo. | Contact WhatsApp Support : <strong>+229 93534357</strong></p>
+    </footer>
+
+</body>
+</html>
